@@ -32,7 +32,7 @@ jobs:
 
       - name: Upload log artifact
         if: ${{ always() }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: aws-monitor-log-${{ github.run_id }}
           path: scripts/aws_resource_report_*.log
